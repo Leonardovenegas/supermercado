@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13'
+    implementation group: 'com.lowagie', name: 'itext', version: '2.1.7'
+    compile group: 'net.coobird', name: 'thumbnailator', version: '0.4.1'
+}
